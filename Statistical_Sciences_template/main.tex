@@ -1,0 +1,170 @@
+\documentclass[12pt, a4paper]{report}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{listings}
+\usepackage{amsthm} 
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage[]{xcolor}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{times} % Times New Roman font
+\usepackage{titlesec}
+\usepackage{pifont}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage[backend=biber, style=numeric, sorting=ynt]{biblatex}
+
+\captionsetup{
+	font=small,             
+	labelfont=bf,
+	textfont={color=gray!100} 
+}
+
+% Geometry package for setting margins
+\geometry{
+  left=2.5cm,
+  right=2.5cm,
+  top=2.5cm,
+  bottom=2.5cm,
+}
+
+% for setting codes
+\lstset{
+	backgroundcolor=\color{gray!10},    
+	basicstyle=\ttfamily\small,         
+	commentstyle=\color{green!50!black}, 
+	keywordstyle=\color{blue},          
+	stringstyle=\color{red},            
+	showstringspaces=false,             
+	numbers=left,                       
+	captionpos=b,                       
+	frame=single,                       
+	breaklines=true,                    
+}
+%------------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------------
+\titleformat{\chapter}[display]
+  {\normalfont\LARGE\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+{\normalfont\Large\bfseries}
+{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\Large\bfseries}
+{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{\normalfont\large\bfseries}
+{\thesubsubsection}{1em}{}
+\DeclareCaptionFont{}{}
+\captionsetup{labelfont={bf}}
+
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+
+\addbibresource{ref.bib}
+
+% Line spacing
+\onehalfspacing
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[chapter]
+
+
+% Title Page
+\begin{document}
+\title{THESIS TITLE}
+\author{Alberto Trashaj}
+\date{2023}
+
+%----------------------------- Frontispiece
+\newgeometry{margin=0.8in}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{0.2cm}
+        {\fontsize{19pt}{20pt}\selectfont \textbf{Alma Mater Studiorum - Università di Bologna}\par}
+    
+        \noindent\hrulefill
+        \vspace{0.8cm}
+        
+        \Large
+        
+        Departement of Statistical Science \\
+        Second Cycle Degree in Statistical Sciences
+        
+        
+        
+        \Large
+        \vspace{5cm}
+        {\fontsize{22.5pt}{22.5}{\textbf{Comparative Analysis of Music Clustering and Classification Using Audio Feature Extraction and Time Series Analysis}}}
+
+        
+     
+        \vspace{4.5cm}
+         \begin{minipage}[t]{0.48\textwidth}
+        \begin{flushleft}
+            {\fontsize{16pt}{16pt}\textbf{Presented by:} \\ Sixun Che \\ \textbf{Matricola:} \\ 0001133202}
+        \end{flushleft}
+    \end{minipage} 
+    \begin{minipage}[t]{0.48\textwidth}
+        \begin{flushright}
+            {\fontsize{16pt}{16pt}\textbf{Supervisor:} \\ Prof. Matteo Farnè}
+        \end{flushright}
+    \end{minipage}
+        
+        
+        \vfill
+        \noindent\hrulefill
+        \vspace{0.3cm}
+        \Large
+        
+       
+        
+        \RNum{1} \RNum{2} or \RNum{3} SESSION \\
+        Academic Year 2024/2025
+    \end{center}
+\end{titlepage}
+\restoregeometry
+\vspace*{5cm}
+\begin{flushright}
+  {\parbox{4.2cm}{\textit{}}}
+\end{flushright}
+
+% Abstract
+\include{chapters/abstract}
+
+
+% Table of Contents
+\tableofcontents
+
+% Main Content
+\include{chapters/introduction}
+
+\include{chapters/first_chapter}
+
+\include{chapters/second_chapter}
+
+\include{chapters/conclusion.tex}
+
+\include{chapters/acknowledgements}
+
+\include{chapters/references}
+
+\include{chapters/appendix.tex}
+
+\end{document}

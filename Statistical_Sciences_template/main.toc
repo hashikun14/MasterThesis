@@ -1,0 +1,41 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Background}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Literature Review}{6}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Methodology}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Short-Time Fourier Transform}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Mel Scale}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Mel Frequency Cepstral Coefficients}{12}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Pre-emphasis}{13}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Framing and Windowing}{13}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Short-Time Fourier Transformation}{14}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Mel Filter Bank}{15}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Discrete Cosine Transform}{17}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}An Example of MFCC}{18}{subsection.2.3.6}%
+\contentsline {section}{\numberline {2.4}Shapelet Tree-Based Classification}{21}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Key Definitions}{21}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Achieve of the Shapelet Algorithm}{24}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}An Example}{31}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Further Notes and Limitations}{35}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Review of Other Statistical Learning Methods}{36}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Hierarchical Clustering}{37}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Partitioning Around Medoids}{38}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Lasso for Logistic Regression}{39}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Lasso For Multinomial Logistic Regression}{40}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}K-Nearest Neighborhood}{41}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.6}Support Vector Machine and Linear Support Vector Classifier}{42}{subsection.2.5.6}%
+\contentsline {chapter}{\numberline {3}Experiment}{45}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Exploratory Analysis of the Data}{45}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Description of Data}{45}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Feature Project}{46}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Clustering}{49}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Supervised Statistical Models for Classification}{56}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Fitting the Models}{58}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Results and Performance}{63}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Explainations of the Models}{69}{subsection.3.2.3}%
+\contentsline {chapter}{Conclusions}{78}{chapter*.30}%
+\contentsline {chapter}{Acknowledgements}{80}{chapter*.31}%
+\contentsline {chapter}{References}{81}{chapter*.31}%
+\contentsline {chapter}{\numberline {A}Appendix}{81}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Appendix: Instructions of Algorithm}{81}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Appendix: Information of GTZAN Dataset}{82}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Appendix: Codes for Statistical Models}{83}{section.A.3}%

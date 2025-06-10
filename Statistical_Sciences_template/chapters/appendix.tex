@@ -1,0 +1,40 @@
+\appendix
+\chapter{Appendix}
+\section{Appendix: Instructions of Algorithm}\label{app:A}
+The implementation of the shapelet tree-based algorithm is carried out in the Python script named "shapelet.py", which is located in the main\textunderscore program folder. This script contains all the core functions described in Section \ref{sec:algo}, including generate\textunderscore candidates, subsequence\textunderscore dist, CalculateInformationGain, check\textunderscore candidate, and find\textunderscore best\textunderscore shapelet. The program also defines a class named MultiTree, which serves as the main structure for the shapelet tree model. The functionality provided by this class is similar to that of a standard decision tree implementation. Specifically, it includes methods for fitting the model to a training dataset, storing the learned tree structure, printing the tree structure, and making predictions on new time series datasets. Following is the example how to use the class:\\
+\begin{lstlisting}[language=Python, caption=Example of using the shapelet tree-based algorithm]
+# set the parameters
+mt=MultiTree(MAXLEN=20,MINLEN=3,max_depth=5,min_samples_split=5) 
+
+# fit the model
+mt.fit(train_series, original_label) 
+
+# print the model structure	
+mt.print_tree_structure() 
+
+# assign the model structure to a variable	
+structure=mt.get_tree_structure() 
+
+# make predictions on new datasets	
+y_pred=mt.predict(test_series) 
+\end{lstlisting}
+\section{Appendix: Information of GTZAN Dataset}\label{app:B}
+The GTZAN dataset can be accessed through multiple platforms. On the TensorFlow Datasets catalog, it is available at \href{https://www.tensorflow.org/datasets/catalog/gtzan}{TensorFlowDatasets},
+and on Kaggle at
+\href{https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification}{Kaggle}.\\
+\\
+In addition to the raw audio files, the Kaggle distribution includes:
+\begin{itemize}
+	\item Waveform visualizations for each files (PNG images), which provide a quick way to view signal dynamics at a glance.
+	\item Two CSV feature tables, one summarizing features computed over 3-second windows and another over the full 30-second duration. These tables contain commonly used audio features (e.g., spectral centroid, zero-crossing rate, MFCCs), ready for direct input into classification models.
+\end{itemize}
+But all the attached files above were not used in this study.\\
+\\
+The full dataset contains ten genres—blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, and rock—with 100 files for each genre. One practical issue to note: in the Kaggle release, the file jazz.00054.wav is corrupted and cannot be read directly. Fortunately, this missing track can be retrieved from alternative sources (e.g., the original Marsyas repository or the TensorFlow mirror) to ensure the dataset remains complete.
+
+\newpage
+\section{Appendix: Codes for Statistical Models}\label{app:C}
+All the codes are uploaded in Github:\\
+\\
+For the part of getting the features from audio signal, the codes are in the document named "feature project.py". For the part of clustering models and the visualization, the codes can be found in document "Visualisation and Clustering.py". Thus for the supervised models including the shapelet tree-based algorithm, the codes are in the document of "model.py".\\
+\\
